@@ -4,11 +4,10 @@
 
 {% block body %}
 
-<img src="/images/tdn-logo.png" alt="TDN logo" />
+<img src="{{ asset('/images/tdn-logo.png') }}" alt="TDN logo" class="my-12 rounded-full shadow-md"/>
 
-<h1>Petit appli &hearts; par Fabien Macip</h1>
+<h1 class="text-gray-700">Petit appli &hearts; par Fabien Macip</h1>
 
-<p>About</p>
-<p><a href={{ path('app_home') }}>Accueil</a></p>
+<p class="mt-5"><a href={{ path('app_home') }} class="text-indigo-500 hover:text-indigo-600 underline">Accueil</a></p>
 
 {% endblock %}
