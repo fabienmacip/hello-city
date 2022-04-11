@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block title 'About Us | ' ~ parent() %}
+
+{% block body %}
+
+<img src="/images/tdn-logo.png" alt="TDN logo" />
+
+<h1>Petit appli &hearts; par Fabien Macip</h1>
+
+<p>About</p>
+<p><a href={{ path('app_home') }}>Accueil</a></p>
+
+{% endblock %}
