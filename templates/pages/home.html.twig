@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<h1>Hello from France</h1>
+
+{# <p>It's currently {{ 'now'|date('H:i') }} par défaut (voir php.ini)</p> #}
+<p>It's currently {{ 'now'|date('H:i', 'Europe/Paris') }} in Paris.</p>
+<p>It's currently {{ 'now'|date('H:i', 'America/Guadeloupe') }} in St-Maarten.</p>
+
+<footer>
+  <p>
+    &copy; Copyright {{ 'now'|date('Y', 'Europe/Paris') }}
+    &middot; <a href="#">About Us</a>
+  </p>
+</footer>
+{% endblock %}
